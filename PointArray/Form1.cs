@@ -29,6 +29,7 @@ namespace VPLab2
             {
                 _pointArray.PtArray.Remove(pt2);
                 fl = false;
+                break;
             }
 
             if (fl)
