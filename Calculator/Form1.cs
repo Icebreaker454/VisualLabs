@@ -52,7 +52,7 @@ namespace Calc
 
         private void metroButton1_Click(object sender, EventArgs e)
         {
-            foreach (var c in GetAll(this, typeof(MetroTextBox)))
+            foreach (var c in GetAll(this, typeof(MaskedTextBox)))
             {
                 c.Text = "";
             }
@@ -123,6 +123,8 @@ namespace Calc
             catch
             {
                 // Raise Validation Errors ?
+                MessageBox.Show("Please check that your data is correct", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return 0.0;
             };
         }

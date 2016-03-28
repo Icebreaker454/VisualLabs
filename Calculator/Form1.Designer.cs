@@ -66,7 +66,6 @@
             this.metroTabPage5 = new MetroFramework.Controls.MetroTabPage();
             this.tzHeightTextBox = new MetroFramework.Controls.MetroTextBox();
             this.tzSecondBasisTextBox = new MetroFramework.Controls.MetroTextBox();
-            this.tzFirstBasisTextBox = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel14 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel15 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel16 = new MetroFramework.Controls.MetroLabel();
@@ -86,6 +85,7 @@
             this.num3 = new MetroFramework.Controls.MetroButton();
             this.num4 = new MetroFramework.Controls.MetroButton();
             this.num1 = new MetroFramework.Controls.MetroButton();
+            this.tzFirstBasisTextBox = new MetroFramework.Controls.MetroTextBox();
             this.shapeSelect.SuspendLayout();
             this.metroTabPage6.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
@@ -742,9 +742,9 @@
             // 
             // metroTabPage5
             // 
+            this.metroTabPage5.Controls.Add(this.tzFirstBasisTextBox);
             this.metroTabPage5.Controls.Add(this.tzHeightTextBox);
             this.metroTabPage5.Controls.Add(this.tzSecondBasisTextBox);
-            this.metroTabPage5.Controls.Add(this.tzFirstBasisTextBox);
             this.metroTabPage5.Controls.Add(this.metroLabel14);
             this.metroTabPage5.Controls.Add(this.metroLabel15);
             this.metroTabPage5.Controls.Add(this.metroLabel16);
@@ -817,35 +817,6 @@
             this.tzSecondBasisTextBox.UseSelectable = true;
             this.tzSecondBasisTextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.tzSecondBasisTextBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // tzFirstBasisTextBox
-            // 
-            // 
-            // 
-            // 
-            this.tzFirstBasisTextBox.CustomButton.Image = null;
-            this.tzFirstBasisTextBox.CustomButton.Location = new System.Drawing.Point(80, 1);
-            this.tzFirstBasisTextBox.CustomButton.Name = "";
-            this.tzFirstBasisTextBox.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.tzFirstBasisTextBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.tzFirstBasisTextBox.CustomButton.TabIndex = 1;
-            this.tzFirstBasisTextBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.tzFirstBasisTextBox.CustomButton.UseSelectable = true;
-            this.tzFirstBasisTextBox.CustomButton.Visible = false;
-            this.tzFirstBasisTextBox.Lines = new string[0];
-            this.tzFirstBasisTextBox.Location = new System.Drawing.Point(320, 35);
-            this.tzFirstBasisTextBox.MaxLength = 32767;
-            this.tzFirstBasisTextBox.Name = "tzFirstBasisTextBox";
-            this.tzFirstBasisTextBox.PasswordChar = '\0';
-            this.tzFirstBasisTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tzFirstBasisTextBox.SelectedText = "";
-            this.tzFirstBasisTextBox.SelectionLength = 0;
-            this.tzFirstBasisTextBox.SelectionStart = 0;
-            this.tzFirstBasisTextBox.Size = new System.Drawing.Size(102, 23);
-            this.tzFirstBasisTextBox.TabIndex = 11;
-            this.tzFirstBasisTextBox.UseSelectable = true;
-            this.tzFirstBasisTextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.tzFirstBasisTextBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // metroLabel14
             // 
@@ -1065,6 +1036,35 @@
             this.num1.Text = "1";
             this.num1.UseSelectable = true;
             // 
+            // tzFirstBasisTextBox
+            // 
+            // 
+            // 
+            // 
+            this.tzFirstBasisTextBox.CustomButton.Image = null;
+            this.tzFirstBasisTextBox.CustomButton.Location = new System.Drawing.Point(80, 1);
+            this.tzFirstBasisTextBox.CustomButton.Name = "";
+            this.tzFirstBasisTextBox.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.tzFirstBasisTextBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tzFirstBasisTextBox.CustomButton.TabIndex = 1;
+            this.tzFirstBasisTextBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tzFirstBasisTextBox.CustomButton.UseSelectable = true;
+            this.tzFirstBasisTextBox.CustomButton.Visible = false;
+            this.tzFirstBasisTextBox.Lines = new string[0];
+            this.tzFirstBasisTextBox.Location = new System.Drawing.Point(320, 39);
+            this.tzFirstBasisTextBox.MaxLength = 32767;
+            this.tzFirstBasisTextBox.Name = "tzFirstBasisTextBox";
+            this.tzFirstBasisTextBox.PasswordChar = '\0';
+            this.tzFirstBasisTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tzFirstBasisTextBox.SelectedText = "";
+            this.tzFirstBasisTextBox.SelectionLength = 0;
+            this.tzFirstBasisTextBox.SelectionStart = 0;
+            this.tzFirstBasisTextBox.Size = new System.Drawing.Size(102, 23);
+            this.tzFirstBasisTextBox.TabIndex = 14;
+            this.tzFirstBasisTextBox.UseSelectable = true;
+            this.tzFirstBasisTextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tzFirstBasisTextBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1166,10 +1166,10 @@
         private MetroFramework.Controls.MetroLabel metroLabel13;
         private MetroFramework.Controls.MetroTextBox tzHeightTextBox;
         private MetroFramework.Controls.MetroTextBox tzSecondBasisTextBox;
-        private MetroFramework.Controls.MetroTextBox tzFirstBasisTextBox;
         private MetroFramework.Controls.MetroLabel metroLabel14;
         private MetroFramework.Controls.MetroLabel metroLabel15;
         private MetroFramework.Controls.MetroLabel metroLabel16;
+        private MetroFramework.Controls.MetroTextBox tzFirstBasisTextBox;
 
     }
 }
