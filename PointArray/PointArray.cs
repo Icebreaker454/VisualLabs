@@ -1,20 +1,20 @@
-﻿using System.Collections;
+﻿using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 
 namespace VPLab2
 {
-    internal class PointArray
+    public class PointArray
     {
-        public ArrayList PtArray;
+        public List<Point> PtArray;
 
-        private Pen _pen;
-        private readonly SolidBrush _basicBrush;
-        private readonly SolidBrush _highlightBrush;
+        public Pen _pen;
+        public SolidBrush _basicBrush;
+        public SolidBrush _highlightBrush;
 
         public PointArray()
         {
-            PtArray = new ArrayList();
+            PtArray = new List<Point>();
 
             _pen = new Pen(Color.Black);
             _basicBrush = new SolidBrush(Color.DarkCyan);
